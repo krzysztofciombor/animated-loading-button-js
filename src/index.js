@@ -34,6 +34,10 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <AnimatedLoadingButton
+          onPress={this.onButtonPress}
+          isLoading={this.state.isLoading}
+          renderButton={this.renderButton}
+          renderLoading={this.renderLoading}
         />
       </View>
     );
